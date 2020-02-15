@@ -15,6 +15,11 @@ According to [NCRB](https://www.financialexpress.com/india-news/crimes-in-india-
 
 ## Code Execution Instructions
 
+### Command to download large files
+```
+git lfs fetch --all
+```
+
 ### Requirements
 ```
 Python (ver >= 3.4)
