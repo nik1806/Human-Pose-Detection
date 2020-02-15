@@ -13,6 +13,38 @@ According to [NCRB](https://www.financialexpress.com/india-news/crimes-in-india-
     4. Normal
 * A comparative analysis of existing classifier to suite the data set.
 
+## Code Execution Instructions
+
+### Requirements
+```
+Python (ver >= 3.4)
+Numpy
+Sklearn
+OpenCv
+```
+
+### Steps
+* Orientation Extraction on Images
+```
+python OpenPoseImage.py
+```
+* Training (Results stored in 'orient_train.csv')
+```
+python multi-person-train.py
+```
+* Classification on video (sample video: 'etc/d_fight.mp4') - Using Dtree/ KNN classifiers
+```
+python multi-person-classify_video_dtree.py -v video_path
+```
+```
+python multi-person-classify_video_knn.py -v video_path
+```
+* Testing (Results stored in 'orient_test_result.csv')
+```
+python multi-person-classify_test_knn.py
+```
+
+
 ## Process Flow
 ![flow](etc/human_pose_classification.png)
 
