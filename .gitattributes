@@ -1,0 +1,1 @@
+model/coco/pose_iter_440000.caffemodel filter=lfs diff=lfs merge=lfs -text
